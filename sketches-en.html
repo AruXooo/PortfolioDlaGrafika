@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sketches</title>
+<meta name="keywords" content="grafika na zamówienie, grafika, grafiki, graphic, images, portfolio, grafiki online, grafiki do pobrania, grafiki anime, grafiki autorskie, grafiki adobe, graphic phone, graphic design is my passion, graphic designer, graphic design, graphic artist, graphic art, graphic assets">
+<meta name="author" content="Adrian Barwiak">
+<meta name="description" content="LazuliIlustrates - portfolio grafika, designera, artysty.">
+<link href="main.css" rel="stylesheet" type="text/css">
+<link href="css/fontello.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,600;1,700&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<header>
+				<a href="index-en.html"><img src="img/unnamed.png" class="logo" alt=""></a>
+				<nav>
+					<div class="nav">
+						<ol>
+							<li><a href="index-en.html">Illustrations</a></li>
+							<li class="books"><a href="#">Books</a>
+								<ol class="submenu">
+									<li><a href="waznosci-en.html">Ważności. 7 wierszyków o ważnej treści</a></li>
+									<li><a href="inka-en.html">Inka</a></li>
+									<li><a href="malwina-en.html">O Malwinie i Tajemnicy Dziadka Piwnicy – contest Piórko 2020</a></li>
+								</ol>
+							</li>
+							<li><a href="characters-en.html">Character design</a></li>
+							<li><a href="sketches-en.html" class="link-active">Sketches</a></li>
+						</ol>
+						<ul>
+							<li><a href="about-en.html">About me</a></li>
+							<li><a href="contact-en.php">Contact</a></li>
+						</ul>
+						<div class="language">
+							<div class="language-icon">
+								<a href="index.html">PL</a>
+							</div>
+							<div class="language-icon">
+								|
+							</div>
+							<div class="language-icon">
+								<a href="index-en.html" class="link-active">ENG</a>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<script>
+			const books = document.querySelector('.books');
+			const submenu = document.querySelector('.submenu');
+			
+				books.addEventListener('click', function(){
+				submenu.classList.toggle('submenu-active');
+			})
+			</script>
+			<footer>
+				<div class="footer">
+					&copy; LazuliIlustrates
+					<div class="socials">
+						<a href="https://www.instagram.com/lazulillustrates/" target="_blank"><i class="icon-instagram"></i></a>
+						<a href="https://www.behance.net/lazulillustrates" target="_blank"><i class="icon-behance"></i></a>
+						<a href="mailto:lazulillustrates@gmail.com"><i class="icon-mail"></i></a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div class="mobilemenu">
+			<header>
+				<a href="index-en.html"><img src="img/unnamed.png" class="mobilelogo" alt=""></a>
+				<button class="menubutton">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</button>
+				<div class="socials">
+					<a href="https://www.instagram.com/lazulillustrates/" 	target="_blank"><i class="icon-instagram"></i></a>
+					<a href="https://www.behance.net/lazulillustrates" target="_blank"><i class="icon-behance"></i></a>
+					<a href="mailto:lazulillustrates@gmail.com"><i class="icon-mail"></i></a>
+				</div>
+			</header>
+		</div>
+		<script>
+			const mobilenav = document.querySelector('.sidebar');
+			const burgerbutton = document.querySelector('.menubutton');
+			
+				burgerbutton.addEventListener('click', function(){
+				mobilenav.classList.toggle('active');
+			})
+		</script>
+		<main>
+			<article>
+				<div class="content">
+					<img src="img/szkice/11.jpg" alt="" class="image">
+					<img src="img/szkice/13.jpg" alt="" class="image">
+					<img src="img/szkice/14.jpg" alt="" class="image">
+					<img src="img/szkice/tresna/Tresnaland.jpg" alt="" class="image">
+					<img src="img/szkice/tresna/tresnaportrait.jpg" alt="" class="image">
+					<img src="img/szkice/tresna/TresnaTheRunningRabbit.jpg" alt="" class="image">
+				</div>
+			</article>
+			<div style="clear: both"></div>
+		</main>
+		<script src="macy.js"></script>
+		<script>
+			const macy = Macy({
+				container: '.content',
+				trueOrder: false,
+				waitForImages: false,
+				margin: 15,
+				columns: 3,
+				breakAt: {
+					1420: 2,
+					1050: 1
+				}
+			});
+		</script>
+	</div>
+</body>
+</html>

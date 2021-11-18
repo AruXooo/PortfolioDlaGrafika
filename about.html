@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>O mnie</title>
+<meta name="keywords" content="grafika na zamówienie, grafika, grafiki, graphic, images, portfolio, grafiki online, grafiki do pobrania, grafiki anime, grafiki autorskie, grafiki adobe, graphic phone, graphic design is my passion, graphic designer, graphic design, graphic artist, graphic art, graphic assets">
+<meta name="author" content="Adrian Barwiak">
+<meta name="description" content="LazuliIlustrates - portfolio grafika, designera, artysty.">
+<link href="main.css" rel="stylesheet" type="text/css">
+<link href="css/fontello.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,600;1,700&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<header>
+				<a href="index.html"><img src="img/unnamed.png" class="logo" alt=""></a>
+				<nav>
+					<div class="nav">
+						<ol>
+							<li><a href="index.html">Ilustracje</a></li>
+							<li class="books"><a href="#">Książki</a>
+								<ol class="submenu">
+									<li><a href="waznosci.html">Ważności. 7 wierszyków o ważnej treści</a></li>
+									<li><a href="inka.html">Inka</a></li>
+									<li><a href="malwina.html">O Malwinie i Tajemnicy Dziadka Piwnicy – konkurs Piórko 2020</a></li>
+								</ol>
+							</li>
+							<li><a href="characters.html">Projektowanie postaci</a></li>
+							<li><a href="sketches.html">Szkice</a></li>
+						</ol>
+						<ul>
+							<li><a href="about.html" class="link-active">O mnie</a></li>
+							<li><a href="contact.php">Kontakt</a></li>
+						</ul>
+						<div class="language">
+							<div class="language-icon">
+								<a href="index.html" class="link-active">PL</a>
+							</div>
+							<div class="language-icon">
+								|
+							</div>
+							<div class="language-icon">
+								<a href="index-en.html">ENG</a>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<script>
+			const books = document.querySelector('.books');
+			const submenu = document.querySelector('.submenu');
+			
+				books.addEventListener('click', function(){
+				submenu.classList.toggle('submenu-active');
+			})
+			</script>
+			<footer>
+				<div class="footer">
+					&copy; LazuliIlustrates
+					<div class="socials">
+						<a href="https://www.instagram.com/lazulillustrates/" target="_blank"><i class="icon-instagram"></i></a>
+						<a href="https://www.behance.net/lazulillustrates" target="_blank"><i class="icon-behance"></i></a>
+						<a href="mailto:lazulillustrates@gmail.com"><i class="icon-mail"></i></a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div class="mobilemenu">
+			<header>
+				<a href="index.html"><img src="img/unnamed.png" class="mobilelogo" alt=""></a>
+				<button class="menubutton">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</button>
+				<div class="socials">
+					<a href="https://www.instagram.com/lazulillustrates/" 	target="_blank"><i class="icon-instagram"></i></a>
+					<a href="https://www.behance.net/lazulillustrates" target="_blank"><i class="icon-behance"></i></a>
+					<a href="mailto:lazulillustrates@gmail.com"><i class="icon-mail"></i></a>
+				</div>
+			</header>
+		</div>
+		<script>
+			const mobilenav = document.querySelector('.sidebar');
+			const burgerbutton = document.querySelector('.menubutton');
+			
+				burgerbutton.addEventListener('click', function(){
+				mobilenav.classList.toggle('active');
+			})
+		</script>
+		<main>
+			<article>
+				<div class="about">
+					<img src="img/About/zdjecie.jpg" alt="" class="contact-img">
+					<h1>O mnie</h1>
+					<p>Cześć!</p>
+					<p>Nazywam się Paulina Dybała – ale możecie mnie znać jako lazullillustrates.</p>
+					<p>Jestem ilustratorką książek dla dzieci i grafikiem komputerowym w Polsce. Ukończyłam Państowe Liceum Plastyczne w Krakowie i obecnie tutaj żyję razem z moim partnerem i chowańcem, małym czarnym kotem. Zawsze byłam osobą z ogromnymy pokładami wyobraźni i pomysłów, tworzyłam swoje historie i postacie od kiedy byłam dzieckiem i ta pasja rozwijała się wraz ze mną po dzisiejszy dzień. Mam komercyjne doświadczenie w tworzeniu naklejek, taśm washi i innych akcesoriów, ostatnio rozpoczęłam też swoją przygodę ilustrując książeczkę z wierszykami dla dzieci – Ważności – która została wydana w Maju 2021. Od tamtego momentu pracuję nad kolejnymi projektami, mając nadzieję, że pewnego dnia uda mi się napisać i zilustrować własną książkę.</p>
+					<p>W sprawie propozycji współpracy – proszę o kontakt na mail: <b class="bold">lazulillustrates@gmail.com</b></p>
+				</div>
+			</article>
+			<div style="clear: both"></div>
+		</main>
+	</div>
+</body>
+</html>
